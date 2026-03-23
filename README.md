@@ -16,6 +16,7 @@
 - [🔬 Research-agent systems](#-research-agent-systems)
 - [💻 Platform ports and hardware forks](#-platform-ports-and-hardware-forks)
 - [🎯 Domain-specific adaptations](#-domain-specific-adaptations)
+- [📊 Evaluation & benchmarks](#-evaluation--benchmarks)
 - [📈 Notable use cases and writeups](#-notable-use-cases-and-writeups)
 - [📚 Related resources](#-related-resources)
 - [📄 License](#-license)
@@ -31,10 +32,13 @@
 - [mutable-state-inc/autoresearch-at-home](https://github.com/mutable-state-inc/autoresearch-at-home) - Collaborative fork of upstream autoresearch that adds experiment claiming, shared best-config syncing, hypothesis exchange, and swarm-style coordination across many single-GPU agents.
 - [zkarimi22/autoresearch-anything](https://github.com/zkarimi22/autoresearch-anything) - Generalizes autoresearch to **any measurable metric** — system prompts, API performance, landing pages, test suites, config tuning, SQL queries. "If you can measure it, you can optimize it."
 - [Entrpi/autoresearch-everywhere](https://github.com/Entrpi/autoresearch-everywhere) - Cross-platform expansion that auto-detects hardware config and starts the loop. The "glue and generalization" half of autoresearch.
+- [ShengranHu/ADAS](https://github.com/ShengranHu/ADAS) - **Automated Design of Agentic Systems** — ICLR 2025. Meta-agents that invent novel agent architectures by programming them in code.
 - [MaximeRobeyns/self_improving_coding_agent](https://github.com/MaximeRobeyns/self_improving_coding_agent) - **SICA**: Self-Improving Coding Agent that edits its own codebase. ICLR 2025 Workshop paper demonstrating scaffold-level self-improvement on coding benchmarks.
 - [peterskoett/self-improving-agent](https://github.com/peterskoett/self-improving-agent) - Alternative self-improving agent architecture with reflection and meta-learning cycles.
 - [metauto-ai/HGM](https://github.com/metauto-ai/HGM) - **Huxley-Gödel Machine** for coding agents — applies self-improvement to SWE-bench performance via meta-level optimization.
 - [gepa-ai/gepa](https://github.com/gepa-ai/gepa) - **GEPA (Genetic-Pareto)** — ICLR 2026 Oral. Reflective prompt evolution that outperforms RL (GRPO) on benchmarks. Optimizes any textual parameters against any metric using natural language reflection.
+- [HKUDS/ClawTeam](https://github.com/HKUDS/ClawTeam) - Agent swarm intelligence for autoresearch — spawns parallel GPU research directions, distributes work across agents, aggregates results.
+- [Orchestra-Research/AI-Research-SKILLs](https://github.com/Orchestra-Research/AI-Research-SKILLs) - Comprehensive skill library including autoresearch orchestration with two-loop architecture (inner optimization + outer synthesis).
 
 ## 🔬 Research-agent systems
 
@@ -48,6 +52,11 @@
 - [SakanaAI/AI-Scientist-v2](https://github.com/SakanaAI/AI-Scientist-v2) - Workshop-level automated scientific discovery via agentic tree search. Removes template dependency from v1, generalizes across research domains.
 - [HKUDS/AI-Researcher](https://github.com/HKUDS/AI-Researcher) - NeurIPS 2025 paper. Full end-to-end research automation: hypothesis → experiments → manuscript → peer review. Production version at [novix.science](https://novix.science/chat).
 - [openags/Auto-Research](https://github.com/openags/Auto-Research) - **OpenAGS**: Orchestrates a team of AI agents across the full research lifecycle — lit review, hypothesis generation, experiments, manuscript writing, and peer review.
+- [SamuelSchmidgall/AgentLaboratory](https://github.com/SamuelSchmidgall/AgentLaboratory) - End-to-end autonomous research workflow: idea → literature review → experiments → report. Supports both autonomous and co-pilot modes.
+- [AgentRxiv](https://agentrxiv.github.io/) - Collaborative autonomous research framework where agent laboratories share a preprint server to build on each other's work iteratively.
+- [JinheonBaek/ResearchAgent](https://github.com/JinheonBaek/ResearchAgent) - Iterative research idea generation over scientific literature with LLMs. Multi-agent review and feedback loops.
+- [du-nlp-lab/MLR-Copilot](https://github.com/du-nlp-lab/MLR-Copilot) - Autonomous ML research framework — generates ideas, implements experiments, analyzes results.
+- [MASWorks/ML-Agent](https://github.com/MASWorks/ML-Agent) - Reinforcing LLM agents for autonomous ML engineering. Learns from trial and error to improve model performance.
 - [PouriaRouzrokh/LatteReview](https://github.com/PouriaRouzrokh/LatteReview) - Low-code Python package for **automated systematic literature reviews** via AI-powered agents.
 - [LitLLM/LitLLM](https://github.com/LitLLM/LitLLM) - AI-powered literature review assistant using RAG for accurate, well-structured related-work sections in academic writing.
 - [Agent Laboratory](https://agentlaboratory.github.io/) - Three-phase research pipeline: Literature Review → Experimentation → Report Writing, with specialized agents for each phase.
@@ -70,6 +79,14 @@
 - [RightNow-AI/autokernel](https://github.com/RightNow-AI/autokernel) - Applies the autoresearch loop to GPU kernel optimization: profile bottlenecks, edit one kernel, benchmark, keep or revert, repeat.
 - [Rkcr7/autoresearch-sudoku](https://github.com/Rkcr7/autoresearch-sudoku) - Enhanced autoresearch workflow where an AI agent iteratively rewrites and benchmarks a Rust sudoku solver, ultimately beating leading human-built solvers on hard benchmark sets.
 
+## 📊 Evaluation & benchmarks
+
+- [snap-stanford/MLAgentBench](https://github.com/snap-stanford/MLAgentBench) - Benchmark suite for evaluating AI agents on ML experimentation tasks. 13 tasks from CIFAR-10 to BabyLM.
+- [openai/mle-bench](https://github.com/openai/mle-bench) - OpenAI's benchmark for measuring how well AI agents perform at ML engineering.
+- [chchenhui/mlrbench](https://github.com/chchenhui/mlrbench) - MLR-Bench: Evaluating AI agents on open-ended ML research. 201 tasks from NeurIPS/ICLR/ICML workshops.
+- [gersteinlab/ML-Bench](https://github.com/gersteinlab/ML-Bench) - Evaluates LLMs and agents for ML tasks on repository-level code.
+- [THUDM/AgentBench](https://github.com/THUDM/AgentBench) - Comprehensive benchmark for LLM-as-Agent evaluation across 8 distinct environments. ICLR 2024.
+
 ## 📈 Notable use cases and writeups
 
 - **Shopify Liquid optimization** - Tobi Lütke shared an autoresearch-style optimization run on Shopify's Liquid engine, with public traces showing major parse/render speedups and allocation reductions. ([tweet](https://x.com/tobi/status/2032212531846971413), [PR with traces](https://github.com/Shopify/liquid/pull/2056))
@@ -78,6 +95,12 @@
 - **Vesuvius Challenge ink detection swarm** - Multi-agent experimental loop applied to ancient-scroll ink detection, with a strong writeup on cross-scroll generalization improvements. ([blog](https://scrollprize.substack.com/p/we-are-cooking))
 - **Earth system model optimization** - Hybrid workflow where an LLM proposes equation structures and a search process tunes parameters, showing how the autoresearch pattern extends into scientific modeling. ([tweet](https://x.com/devparagiri/status/2035075626273739068), [blog](https://paragiri.com/blog/2026/autoresearch-earth-system-models/))
 - **The Agentic Researcher** - Paper: "A Practical Guide to AI-Assisted Research in Mathematics and Machine Learning." Cites autoresearch as the canonical example of automated ML experiment pipelines. ([arxiv 2603.15914](https://arxiv.org/html/2603.15914))
+- **Scaling Autoresearch to GPU Clusters** - SkyPilot blog on running autoresearch on H100/H200 clusters with cloud orchestration. ([SkyPilot Blog](https://blog.skypilot.co/scaling-autoresearch/))
+- **Self-Improving Coding Agents** - Addy Osmani's practical guide to setting up self-improving agent loops with Claude Code. ([article](https://addyosmani.com/blog/self-improving-agents/))
+- **autoresearch@home: Distributed AI Research** - SETI@home model applied to autoresearch — contribute GPU time to collective model optimization. ([Ensue Blog](https://ensue.dev/blog/autoresearch-at-home/))
+- **Claude Code + AutoResearch for Self-Improving Skills** - MindStudio guide to building self-improving AI skills using Claude Code with autoresearch patterns. ([article](https://www.mindstudio.ai/blog/claude-code-autoresearch-self-improving-skills))
+- **100 ML Experiments Overnight** - Particula technical breakdown with domain-agnostic fork applications. ([article](https://particula.tech/blog/karpathy-autoresearch-autonomous-ml-experiments))
+- **PM's Guide to Autoresearch** - Product manager's guide covering setup, community forks, and real-world applications. ([article](https://www.news.aakashg.com/p/autoresearch-guide-for-pms))
 - **Autoresearch 101 Builder's Playbook** - Substack deep-dive on applying autoresearch patterns to prompts, agents, and workflows with concrete examples. ([article](https://sidsaladi.substack.com/p/autoresearch-101-builders-playbook))
 - **Kingy AI Technical Breakdown** - Detailed technical walkthrough of the autoresearch loop architecture, mutation operators, and fitness function design. ([article](https://kingy.ai/ai/autoresearch-karpathys-minimal-agent-loop-for-autonomous-llm-experimentation/))
 - **Fortune Feature** - Business and industry context on why autoresearch matters for the future of autonomous AI agents. ([article](https://fortune.com/2026/03/17/andrej-karpathy-loop-autonomous-ai-agents-future/))
@@ -86,9 +109,14 @@
 
 Curated lists and paper collections for AI agents, autonomous systems, and automated research:
 
+- [ai-agents-2030/awesome-deep-research-agent](https://github.com/ai-agents-2030/awesome-deep-research-agent) - Curated list of deep research agent papers and systems.
+- [YoungDubbyDu/LLM-Agent-Optimization](https://github.com/YoungDubbyDu/LLM-Agent-Optimization) - Papers on LLM agent optimization methods.
 - [VoltAgent/awesome-ai-agent-papers](https://github.com/VoltAgent/awesome-ai-agent-papers) - Curated AI agent papers from 2026 — agent engineering, memory, evaluation, workflows, and autonomous systems.
 - [masamasa59/ai-agent-papers](https://github.com/masamasa59/ai-agent-papers) - AI agent research papers updated biweekly via automated arxiv search with curated selection.
 - [tmgthb/Autonomous-Agents](https://github.com/tmgthb/Autonomous-Agents) - Autonomous agents research papers, updated daily.
+- [HKUST-KnowComp/Awesome-LLM-Scientific-Discovery](https://github.com/HKUST-KnowComp/Awesome-LLM-Scientific-Discovery) - EMNLP 2025 survey on LLMs in scientific discovery.
+- [openags/Awesome-AI-Scientist-Papers](https://github.com/openags/Awesome-AI-Scientist-Papers) - Collection of AI Scientist / Robot Scientist papers.
+- [agenticscience.github.io](https://agenticscience.github.io/) - Survey: "From AI for Science to Agentic Science: A Survey on Autonomous Scientific Discovery."
 - [dspy.ai/GEPA](https://dspy.ai/api/optimizers/GEPA/overview/) - DSPy integration of GEPA reflective prompt optimizer for compound AI systems.
 - [OpenAI Cookbook: Self-Evolving Agents](https://developers.openai.com/cookbook/examples/partners/self_evolving_agents/autonomous_agent_retraining) - Cookbook for autonomous agent retraining using GEPA-style reflective evolution.
 
