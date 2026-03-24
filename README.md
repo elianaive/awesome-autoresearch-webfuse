@@ -60,6 +60,7 @@
 - [PouriaRouzrokh/LatteReview](https://github.com/PouriaRouzrokh/LatteReview) - Low-code Python package for **automated systematic literature reviews** via AI-powered agents.
 - [LitLLM/LitLLM](https://github.com/LitLLM/LitLLM) - AI-powered literature review assistant using RAG for accurate, well-structured related-work sections in academic writing.
 - [Agent Laboratory](https://agentlaboratory.github.io/) - Three-phase research pipeline: Literature Review → Experimentation → Report Writing, with specialized agents for each phase.
+- [WecoAI/aideml](https://github.com/WecoAI/aideml) - **AIDE**: AI-Driven Exploration — tree-search-based ML engineering agent that automates experiment design, code generation, and evaluation. Treats ML engineering as code optimization against any metric.
 
 ## 💻 Platform ports and hardware forks
 
@@ -119,6 +120,7 @@ Curated lists and paper collections for AI agents, autonomous systems, and autom
 - [agenticscience.github.io](https://agenticscience.github.io/) - Survey: "From AI for Science to Agentic Science: A Survey on Autonomous Scientific Discovery."
 - [dspy.ai/GEPA](https://dspy.ai/api/optimizers/GEPA/overview/) - DSPy integration of GEPA reflective prompt optimizer for compound AI systems.
 - [OpenAI Cookbook: Self-Evolving Agents](https://developers.openai.com/cookbook/examples/partners/self_evolving_agents/autonomous_agent_retraining) - Cookbook for autonomous agent retraining using GEPA-style reflective evolution.
+- [WecoAI/awesome-autoresearch](https://github.com/WecoAI/awesome-autoresearch) - Curated list of AutoResearch use cases with verifiable traces and progress charts, organized by domain (LLM training, GPU kernels, voice agents, trading, etc.).
 
 <div align="center">
 
