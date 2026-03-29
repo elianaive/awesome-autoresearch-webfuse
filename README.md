@@ -75,6 +75,7 @@
 - [lucasgelfond/autoresearch-webgpu](https://github.com/lucasgelfond/autoresearch-webgpu) ![GitHub stars](https://img.shields.io/github/stars/lucasgelfond/autoresearch-webgpu?style=social) - Browser/WebGPU port that lets agents generate training code, run experiments in-browser, and feed results back into the loop without a Python setup.
 - [tonitangpotato/autoresearch-engram](https://github.com/tonitangpotato/autoresearch-engram) ![GitHub stars](https://img.shields.io/github/stars/tonitangpotato/autoresearch-engram?style=social) - Fork with **persistent cognitive memory** — frequency-weighted retrieval of cross-session knowledge for improved experiment continuity.
 - **Colab/Kaggle T4 port** - Adapts autoresearch for free T4 GPUs (Google Colab / Kaggle) with zero cost and zero local setup. Key changes: Flash Attention 3 → PyTorch SDPA, removes H100-only kernel dependency. ([upstream issue #208](https://github.com/karpathy/autoresearch/issues/208))
+- [ArmanJR-Lab/autoautoresearch](https://github.com/ArmanJR-Lab/autoautoresearch) - Jetson AGX Orin port with a **director** — a Go binary that acts as a "creative director" injecting novelty (arxiv papers + DeepSeek Reasoner) into the loop to escape local minima. Includes multi-experiment comparison (baseline vs director-guided) with detailed stall analysis.
 
 ## 🎯 Domain-specific adaptations
 
